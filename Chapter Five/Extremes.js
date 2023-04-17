@@ -1,3 +1,4 @@
+let prompt = require("prompt-sync")();
 const numberIntegers = parseInt(prompt("How many number do you want to enter: "));
 
 let max = 0;

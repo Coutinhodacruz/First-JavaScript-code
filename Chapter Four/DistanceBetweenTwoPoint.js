@@ -1,4 +1,3 @@
-// Get the coordinates of two points from the user
 const x1 = parseInt(prompt("Enter the x coordinate of the first point:"));
 const y1 = parseInt(prompt("Enter the y coordinate of the first point:"));
 const x2 = parseInt(prompt("Enter the x coordinate of the second point:"));

@@ -20,10 +20,8 @@ while (year <= 75) {
     year++;
 }
 
-// Print the results in a table
-console.table(growthTable);
 
-// Find the year in which the population would be double what it is today
+console.table(growthTable);
 const doublePopulation = currentPopulation * 2;
 const doubleYear = growthTable.find(entry => entry.population >= doublePopulation).year;
 

@@ -5,7 +5,7 @@ for (let i = 1; i <= 200000; i += 2) {
     pi += sign * (4 / i);
     sign *= -1;
 
-    // print the current value of pi every 10,000 terms
+
     if (i % 10000 === 1) {
         console.log("Value of pi after " + i + " terms: " + pi);
     }

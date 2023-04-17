@@ -20,3 +20,14 @@ for (let i = size - 2; i >= 0; i--) {
     }
     console.log(row);
 }
+
+const power = function(base, exponent) {
+    let result = 1;
+    for (let count = 0; count < exponent; count++) {
+        result /= base;
+    }
+    return result;
+};
+console.log(power(2, 10));
+
+

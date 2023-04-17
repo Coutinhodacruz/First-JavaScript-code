@@ -1,4 +1,4 @@
-// Define the quiz questions and answers
+let prompt = require('prompt-sync')()
 const questions = [
     {
         question: "Which gas is the primary contributor to global warming?",
@@ -52,7 +52,6 @@ const questions = [
     },
 ];
 
-// Define a function to administer the quiz
 function administerQuiz() {
     let score = 0;
 
@@ -61,17 +60,14 @@ function administerQuiz() {
         const answers = questions[i].answers;
         const correctAnswer = questions[i].correctAnswer;
 
-        // Print the question and answer choices
         console.log(question);
         for (let j = 0; j < answers.length; j++) {
             console.log(`${j + 1}. ${answers[j]}`);
         }
 
-        // Get the user's answer
         const userAnswer = prompt("Enter your answer (1-4):");
         const index = parseInt(userAnswer) - 1;
 
-        // Check if the user's answer is correct
         if (index === correctAnswer) {
             console.log("Correct!");
             score++;
@@ -80,7 +76,6 @@ function administerQuiz() {
         }
     }
 
-    // Print the user's score and feedback
     console.log(`You got ${score} out of ${questions.length} correct.`);
     if (score === 5) {
         console.log("Excellent!");
@@ -94,6 +89,4 @@ function administerQuiz() {
         console.log("- https://www.nrdc.org/issues/climate-change");
     }
 }
-
-// Administer the quiz when the page is loaded
 administerQuiz();
