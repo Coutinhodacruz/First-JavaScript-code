@@ -51,32 +51,59 @@
 //
 // console.table(vehicles)
 
-let prompt = require("prompt-sync")();
-
-let number = [];
-
-grade1 = [200,50,300,5];
-grade2 = [10,25,7,100];
-grade3 = [25,20,70,45];
-grade4 = [500,170,11,35];
-number.push(grade1,grade2,grade3,grade4);
-console.table(number)
-
-function grade(row, column, end){
-    for (let i = row; i <= end; i++) {
-        console.table(number[column][i]);
-    }
-}
-let rows = prompt("Enter row ");
-let colum = prompt("Enter column ");
-let ends = prompt("enter the end ");
-grade(rows,colum,ends)
-
-
+// let prompt = require("prompt-sync")();
+//
+// let number = [];
+//
+// grade1 = [200,50,300,5];
+// grade2 = [10,25,7,100];
+// grade3 = [25,20,70,45];
+// grade4 = [500,170,11,35];
+// number.push(grade1,grade2,grade3,grade4);
+// console.table(number)
+//
+// function grade(row, column, end){
+//     for (let i = row; i <= end; i++) {
+//         console.table(number[column][i]);
+//     }
+// }
+// let rows = prompt("Enter row ");
+// let colum = prompt("Enter column ");
+// let ends = prompt("enter the end ");
+// grade(rows,colum,ends)
 
 
+let group = []
+
+reds = ["anfield", 300,700,"arnold"];
+blues = ["bridge", 200,500,"felix"];
+yellow = ["wolves", 100, 200,"neves"]
+white = ["hala", 600, 900,"benzema"];
+
+group.push(reds,blues,yellow,white)
+console.table(group)
+
+darkRed = ["trafford", 500 ,800, "bruno"];
+group.push(darkRed)
+console.table(group)
 
 
+// console.table(group[0][0])
+
+redBlue = ["barca", 750, 850, "lewadoski"];
+blackWhite = ["juve", 550, 300, "maria"];
+redBlack = ["bayern", 900, 900, "sane"];
+whiteBlue = ["city", 900, 800, "kelvin"];
+
+group.push(whiteBlue,redBlack,redBlue,blackWhite)
+
+console.table(group)
+
+// group.splice(1,3,5)
+// console.log(group)
+
+group.shift()
+console.log(group)
 
 
 

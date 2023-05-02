@@ -19,9 +19,9 @@ let prompt = require("prompt-sync")();
 // console.log(range(1, 10, 2));
 // console.log(range(5, 2, -1));
 // console.log(range(1, 5));
-let startingPoint = parseInt(prompt("Enter the start"))
-let endingPoint = parseInt(prompt("Enter the end"))
-let inputStep = parseInt(prompt("Enter the step"))
+let startingPoint = parseInt(prompt("Enter the start "))
+let endingPoint = parseInt(prompt("Enter the end "))
+let inputStep = parseInt(prompt("Enter the step "))
 let newArr = [];
 function Output(start, end, step) {
     if (isNaN(step) && end > start) step = 1;
