@@ -62,11 +62,12 @@
 // const myFunc = makeFun();
 // myFunc();
 
-function index(base){
-    return (number) => number * base;
-}
-let baseTwo = index(2);
-let baseThree = index(3);
+// function index(base){
+//     return (number) => number * base;
+// }
+// let baseTwo = index(2);
+// let baseThree = index(3);
+//
+// console.log(typeof baseTwo(3))
+// console.log(baseTwo(4))
 
-console.log(typeof baseTwo(3))
-console.log(baseTwo(4))
